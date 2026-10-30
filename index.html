@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/fdr-guard-icon.svg" />
+    <title>FDR GUARD — Financial Security Deposit & FDR Management</title>
+    <meta name="description" content="FDR GUARD: Institutional security deposit and Fixed Deposit Receipt management platform for AICTE regulatory assurance." />
+    <meta property="og:title" content="FDR GUARD — Financial Security Deposit & FDR Management" />
+    <meta property="og:description" content="Institutional security deposit and Fixed Deposit Receipt management platform for AICTE regulatory assurance." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // AI Studio Runtime: HMR is disabled in container. Ignore WebSocket connection events.
+      window.addEventListener('unhandledrejection', function(event) {
+        var msg = event && event.reason ? String(event.reason.message || event.reason) : '';
+        var stack = event && event.reason ? String(event.reason.stack || '') : '';
+        if (msg.indexOf('WebSocket') !== -1 || stack.indexOf('@vite/client') !== -1) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = event ? String(event.message || '') : '';
+        var file = event ? String(event.filename || '') : '';
+        if (msg.indexOf('WebSocket') !== -1 || file.indexOf('@vite/client') !== -1) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

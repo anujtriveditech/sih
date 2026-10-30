@@ -1,0 +1,175 @@
+<svg width="512" height="512" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Outer Chassis Dark Titanium Gradient -->
+    <linearGradient id="vaultDarkChassis" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#0B1320" />
+      <stop offset="100%" stop-color="#040810" />
+    </linearGradient>
+
+    <!-- Outer Bevel Metallic Edge -->
+    <linearGradient id="vaultChassisBevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748B" />
+      <stop offset="35%" stop-color="#C5A059" />
+      <stop offset="70%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <!-- Luminous Gold Neon Energy Channel -->
+    <linearGradient id="vaultGoldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <!-- Circular Vault Door Steel Radial -->
+    <radialGradient id="vaultDoorSteel" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2A374A" />
+      <stop offset="60%" stop-color="#131F30" />
+      <stop offset="100%" stop-color="#080F1A" />
+    </radialGradient>
+
+    <!-- Spoke Metallic Chrome Gradient -->
+    <linearGradient id="spokeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+
+    <!-- Radiant Center Gold Core -->
+    <radialGradient id="vaultCoreGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="35%" stop-color="#FBBF24" />
+      <stop offset="75%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </radialGradient>
+
+    <!-- Glow Filter for Golden Light Channel -->
+    <filter id="goldAura" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Outer Hexagonal Armored Shield Chassis -->
+  <polygon
+    points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5"
+    fill="url(#vaultDarkChassis)"
+    stroke="url(#vaultChassisBevel)"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Hexagonal Inner Bevel Rim -->
+  <polygon
+    points="50,10.5 85,30 85,70 50,89.5 15,70 15,30"
+    fill="none"
+    stroke="#1E293B"
+    stroke-width="1.2"
+    opacity="0.8"
+  />
+
+  <!-- 2. Luminous Golden Inner Perimeter Glow Channel -->
+  <polygon
+    points="50,15 80.5,32.5 80.5,67.5 50,85 19.5,67.5 19.5,32.5"
+    fill="none"
+    stroke="url(#vaultGoldGlow)"
+    stroke-width="2"
+    stroke-dasharray="9 2.5"
+    filter="url(#goldAura)"
+  />
+
+  <!-- 6 Perimeter Vault Locking Corner Lugs -->
+  <rect x="47.5" y="11" width="5" height="4" rx="1" fill="#F59E0B" />
+  <rect x="47.5" y="85" width="5" height="4" rx="1" fill="#F59E0B" />
+  <circle cx="80.5" cy="32.5" r="2.5" fill="#F59E0B" />
+  <circle cx="80.5" cy="67.5" r="2.5" fill="#F59E0B" />
+  <circle cx="19.5" cy="67.5" r="2.5" fill="#F59E0B" />
+  <circle cx="19.5" cy="32.5" r="2.5" fill="#F59E0B" />
+
+  <!-- 3. Heavy Circular Bank Vault Door Mechanism -->
+  <circle
+    cx="50"
+    cy="50"
+    r="28"
+    fill="url(#vaultDoorSteel)"
+    stroke="#C5A059"
+    stroke-width="2"
+  />
+
+  <!-- Concentric Precision Dial Tracks -->
+  <circle
+    cx="50"
+    cy="50"
+    r="23"
+    fill="none"
+    stroke="#475569"
+    stroke-width="1"
+    stroke-dasharray="1.5 2"
+  />
+  <circle
+    cx="50"
+    cy="50"
+    r="19"
+    fill="none"
+    stroke="#C5A059"
+    stroke-width="0.8"
+    stroke-opacity="0.6"
+  />
+
+  <!-- 4. Six Radial Vault Wheel Spokes / Locking Bolts -->
+  <g>
+    <!-- Top Spoke -->
+    <line x1="50" y1="38" x2="50" y2="22" stroke="url(#spokeGradient)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="50" cy="22" r="2.2" fill="#F59E0B" />
+    <circle cx="50" cy="31" r="1.5" fill="#94A3B8" />
+
+    <!-- Bottom Spoke -->
+    <line x1="50" y1="62" x2="50" y2="78" stroke="url(#spokeGradient)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="50" cy="78" r="2.2" fill="#F59E0B" />
+    <circle cx="50" cy="69" r="1.5" fill="#94A3B8" />
+
+    <!-- Top-Right Spoke (30°) -->
+    <line x1="60.4" y1="44" x2="74.2" y2="36" stroke="url(#spokeGradient)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="74.2" cy="36" r="2.2" fill="#F59E0B" />
+
+    <!-- Bottom-Right Spoke (330°) -->
+    <line x1="60.4" y1="56" x2="74.2" y2="64" stroke="url(#spokeGradient)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="74.2" cy="64" r="2.2" fill="#F59E0B" />
+
+    <!-- Bottom-Left Spoke (210°) -->
+    <line x1="39.6" y1="56" x2="25.8" y2="64" stroke="url(#spokeGradient)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="25.8" cy="64" r="2.2" fill="#F59E0B" />
+
+    <!-- Top-Left Spoke (150°) -->
+    <line x1="39.6" y1="44" x2="25.8" y2="36" stroke="url(#spokeGradient)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="25.8" cy="36" r="2.2" fill="#F59E0B" />
+  </g>
+
+  <!-- 5. Radiant Golden Central Core & Keyhole -->
+  <circle
+    cx="50"
+    cy="50"
+    r="11.5"
+    fill="url(#vaultCoreGold)"
+    stroke="#FDE68A"
+    stroke-width="1.2"
+    filter="url(#goldAura)"
+  />
+  <circle
+    cx="50"
+    cy="50"
+    r="8.5"
+    fill="none"
+    stroke="#78350F"
+    stroke-width="0.8"
+    stroke-opacity="0.7"
+  />
+
+  <!-- Sovereign Keyhole Silhouette -->
+  <circle cx="50" cy="47.5" r="3" fill="#07101E" />
+  <polygon points="48,47.5 52,47.5 53.2,54 46.8,54" fill="#07101E" />
+
+  <!-- Micro Sparkle Accent at Top Pinnacle -->
+  <circle cx="50" cy="5" r="1.5" fill="#FFFBEB" />
+</svg>

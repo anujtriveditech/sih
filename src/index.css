@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-deep-ink: #14243A;
+    --color-midnight-navy: #0D1828;
+    --color-institutional-teal: #087F78;
+    --color-refined-mint: #DDF4EC;
+    --color-warm-porcelain: #F6F5F0;
+    --color-pure-white: #FFFFFF;
+    --color-slate-text: #586779;
+    --color-muted-border: #E0E5E9;
+    --color-amber-warning: #C98519;
+    --color-critical-red: #C94343;
+  }
+
+  body {
+    font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #14243A;
+    background-color: #F6F5F0;
+  }
+
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+/* Tabular figures for all financial & numerical figures */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle, refined scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(88, 103, 121, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(88, 103, 121, 0.45);
+}
